@@ -12,8 +12,6 @@ app.use(express.json());
 
 
 
-app.get('/list', )
-
 
 
 console.log('hello')

@@ -1,7 +1,94 @@
-*{
-    margin:0;
-    padding:0;
-}
-body{
-    background-color: azure;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* background-image: url("https://d39l2hkdp2esp1.cloudfront.net/img/photo/138927/138927_00_2x.jpg?20180118234709");
+    background-repeat: no-repeat;
+    background-size: auto; */
+    background-image: url(/images/theater.jpg);
+    background-size:cover;
+    background-repeat: none;
+    background-blend-mode:luminosity;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #d6b5c9;
+  }
+  
+  header {
+    background-color: #e29ec4;
+    height: 60px;
+    justify-content: center;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    padding-top: 10px;
+  }
+  
+  .boards {
+    display: flex;
+    flex: .5;
+  }
+  
+  .list {
+    width: 250px;
+    border: 1px solid #867ef6;
+    margin: 20px;
+    border-radius: 10px;
+    color: #f67ee2;
+  }
+  
+  .list .title {
+    margin: 5px 10px;
+    padding: 5px;
+  }
+  
+  .list .item {
+    padding: 5px;
+    border-bottom: 1px solid #621a74;
+  }
+  
+  .list input, button {
+    color: #f67ed8a2;
+    margin-left: 5px;
+  }
+  
+  button {
+    padding: 2px;
+    background-color: rgb(247, 243, 239);
+    width: 35px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style:outset ;
+    }
+  
+  .heading {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #995393;
+  }
+  
+  .heading .title {
+    width: 200px;
+
+  }
+  .heading .done{
+    width: 200px;
+  }
+  
+  .heading .add {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .error {
+    color: red;
+  }
