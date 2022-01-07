@@ -14,7 +14,7 @@ loginForm.addEventListener('submit', (e) =>{
 
     const usernameValue = usernameInput.value;
     const passwordValue = PasswordInput.value;
-    const newURL=  window.location.href = "https://capstone-22.herokuapp.com/";
+    const newURL= "https://capstone-22.herokuapp.com/";
 	var btn = document.querySelector(".redirect"); 
 
 	btn.addEventListener("click", function(e){
@@ -27,7 +27,7 @@ loginForm.addEventListener('submit', (e) =>{
         const loginMessage = document.createElement("h2");
         loginMessage.textContent= `Hey ${res.data.username}! Thanks for logging in!`;
         messageSection.append(newURL)
-		window.location.href = `${newURL}`;
+		// window.location.href = `${newURL}`;
 
     })
     .catch((err) =>{
