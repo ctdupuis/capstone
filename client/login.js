@@ -14,20 +14,20 @@ loginForm.addEventListener('submit', (e) =>{
 
     const usernameValue = usernameInput.value;
     const passwordValue = PasswordInput.value;
-    const newURL=  window.location.href = "http://localhost:4545/index.html";
+    const newURL=  window.location.href = "https://capstone-22.herokuapp.com/";
 	var btn = document.querySelector(".redirect"); 
 
 	btn.addEventListener("click", function(e){
 	e.preventDefault();
 	location.reload(true); 
 	}); 
-    axios.get(`http://localhost:4545/login?username=${usernameValue}&password=${passwordValue}`)
+    axios.get(`${newURL}/login?username=${usernameValue}&password=${passwordValue}`)
     .then((res) => {
         console.log(res.data);
         const loginMessage = document.createElement("h2");
         loginMessage.textContent= `Hey ${res.data.username}! Thanks for logging in!`;
         messageSection.append(newURL)
-		window.location.href = "http://localhost:4545/index.html";
+		window.location.href = `${newURL}`;
 
     })
     .catch((err) =>{
