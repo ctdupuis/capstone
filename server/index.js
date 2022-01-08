@@ -18,7 +18,7 @@ app.get("/",()=>{
 })
 
 app.post("/movies", ctrl.createItem)
-// app.get('/login', ctrl.login )
+
 
 
 console.log('hello')
