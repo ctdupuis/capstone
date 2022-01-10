@@ -13,7 +13,7 @@ loginForm.addEventListener('submit', (e) =>{
     const PasswordInput = document.getElementById("password");
 
     const usernameValue = usernameInput.value;
-    const passwordValue = PasswordInput.value;
+    const passwordValue = passwordInput.value;
     const newURL=  window.location.href = "http://localhost:4545/index.html";
 	var btn = document.querySelector(".redirect"); 
 
