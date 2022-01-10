@@ -1,16 +1,14 @@
-[{
-    "id": 1,
-    "title": "LOTR"
-},
-{
-    "id": 2,
-    "title": "LOTR"
-},
-{
-    "id": 3,
-    "title": "LOTR"
-}
-
-
-
+[
+    {
+        "id": 1,
+        "title": "Spider-Man: Homecoming"
+    },
+    {
+        "id": 2,
+        "title": "Spider-Man: Far From Home"
+    },
+    {
+        "id": 3,
+        "title": "Spider-Man: No Way Home"
+    }
 ]

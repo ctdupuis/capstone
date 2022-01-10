@@ -42,12 +42,14 @@ add_btnThree.addEventListener('click', ()=>{
 const removeBtn = document.querySelector(".remove")
 removeBtn.addEventListener("click", event =>{
   var itemRemove = document.querySelector(".item")
+  // debugger
   for(let i =0; i <itemRemove.clientHeight; i++){
     itemRemove.remove(".item")
   console.log('clicked')
   }
   
 })
+
 const removeBtnTwo = document.querySelector(".removeTwo")
 removeBtnTwo.addEventListener("click", event =>{
   var itemRemove = document.querySelector(".item")
@@ -103,6 +105,7 @@ const create_item = () => {
 item.appendChild(save_btn)
 return item;
 };
+
 document.querySelectorAll('.drop').forEach(element => {
   element.addEventListener('drop', event =>{
     event.preventDefault();

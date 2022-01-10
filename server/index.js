@@ -3,7 +3,6 @@ require("dotenv").config();
 const express = require("express");
 
 const cors = require("cors")
-const {SERVER_PORT}=process.env;
 const ctrl = require("./controller")
 
 const app = express();
@@ -13,7 +12,7 @@ app.use(express.json());
 
 app.use(express.static("client"))
 
-app.get("/",()=>{
+app.get("/", (req, res) => {
      res.sendFile("index.html")
 })
 
@@ -21,12 +20,6 @@ app.post("/movies", ctrl.createItem)
 
 
 
-console.log('hello')
+const PORT = process.env.PORT || 4545;
 
-
-
-
-
-
-app.listen(SERVER_PORT, () =>
-     console.log(`your server is running on port: ${SERVER_PORT}`))
+app.listen(PORT, () => console.log(`your server is running on port: ${PORT}`))
